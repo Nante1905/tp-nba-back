@@ -53,6 +53,7 @@ INSERT INTO joueur_partie (id_joueur, id_partie) VALUES
   (9, 1),
   (10, 1);
 
+
 --- Insertion de données de test pour la table point_marque avec des chronos variant de 1 à 12 minutes
 INSERT INTO point_marque (id_joueur, id_partie, id_quart_temps, valeur, success, chrono) VALUES
   (1, 1, 3, 2, true, '00:01:30'),
@@ -153,8 +154,24 @@ INSERT INTO temps_passe (id_joueur, id_partie, id_quart_temps, chrono_entre, chr
   (3, 2, 2, '00:08:45', '00:09:30'),
   (4, 2, 2, '00:10:00', '00:10:45'),
   (5, 2, 3, '00:11:15', '00:12:00'),
-  (6, 1, 1, '00:12:30', '00:01:15'),
-  (7, 1, 2, '00:11:45', '00:02:30'),
-  (8, 1, 3, '00:10:00', '00:03:15'),
-  (9, 1, 4, '00:10:15', '00:04:00'),
-  (10, 1, 4, '00:10:30', '00:04:45');
+  (6, 1, 1, '00:10:30', '00:11:15'),
+  (7, 1, 2, '00:10:45', '00:11:30'),
+  (8, 1, 3, '00:10:00', '00:11:15'),
+  (9, 1, 4, '00:9:15', '00:11:30'),
+  (10, 1, 4, '00:10:30', '00:12:00');
+
+
+-- MU INSERTION PARTIE
+
+  -- VAOVAO
+INSERT INTO joueur_partie (id_joueur, id_partie) VALUES
+  (1, 2),
+  (2, 2),
+  (3, 2),
+  (4, 2),
+  (5, 2),
+  (6, 2),
+  (7, 2),
+  (8, 2),
+  (9, 2),
+  (10, 2);
