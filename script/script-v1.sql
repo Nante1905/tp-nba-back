@@ -78,6 +78,7 @@ CREATE TABLE passe_decisive(
 );
 
 CREATE TABLE temps_passe(
+   id SERIAL PRIMARY key,
    id_joueur INTEGER,
    id_partie INTEGER,
    id_quart_temps INTEGER,
