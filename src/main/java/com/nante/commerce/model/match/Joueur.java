@@ -1,7 +1,9 @@
 package com.nante.commerce.model.match;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.nante.commerce.crud.model.GenericModel;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +22,8 @@ public class Joueur extends GenericModel {
     double masse;
     double taille;
 
-    @ManyToOne
+    @JsonIgnore
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_equipe")
     Equipe equipe;
 
