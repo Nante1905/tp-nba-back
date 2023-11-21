@@ -1,5 +1,5 @@
-CREATE DATABASE stat_basket;
-\c stat_basket;
+-- CREATE DATABASE stat_basket;
+-- \c stat_basket;
 
 CREATE TABLE equipe(
    id SERIAL PRIMARY KEY,
