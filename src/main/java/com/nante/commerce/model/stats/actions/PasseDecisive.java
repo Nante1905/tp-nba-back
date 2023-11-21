@@ -25,6 +25,10 @@ public class PasseDecisive extends Actions {
 
     }
 
+    public PasseDecisive() {
+        super();
+    }
+
     public int getId() {
         return id;
     }

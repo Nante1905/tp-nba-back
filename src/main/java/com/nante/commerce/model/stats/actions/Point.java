@@ -24,6 +24,10 @@ public class Point extends Actions {
         super(joueur, partie, quartTemps, chrono);
     }
 
+    public Point() {
+        super();
+    }
+
     int valeur;
     boolean success;
 
