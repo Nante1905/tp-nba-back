@@ -1,4 +1,4 @@
-FROM openjdk-17
+FROM openjdk:17
 WORKDIR /app
 COPY . .
 ENTRYPOINT [ "sh", "mvnw", "spring-boot:run" ]
